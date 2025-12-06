@@ -9,13 +9,19 @@
 
       body {
         font-family: "Helvetica", sans-serif;
+        display: grid;
+        place-items: center;
+      }
+
+      .loginID {
+        /* make this look good */
       }
       
     </style>
     </head>
     <body>
 
-<form action="/submit-data" method="post">
+<form action="/home" method="post" class="loginID">
   <label for="username">Aperture Science Electronic Identification Code</label>
   <input type="text" id="APSEIC" name="ApertureScienceElectronicIdentificationCode" placeholder="Enter your Aperture Science Electronic Identification Code">
   <input type="submit" value="Submit">
