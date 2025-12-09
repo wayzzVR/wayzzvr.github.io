@@ -1,42 +1,66 @@
-<!doctype html>
-  <html>
-    <!-- btw im not making an actual password i dont wanna if u look at the code you dont even type a username and type whatever u want for password and it lets you continue -->
-    <head>
-      <meta charset="utf-8">
-      <title>WayzzVR [Aperture Science Site]</title>
-     <link rel="icon" type="image/png" href="favicon.png">
-     <!-- i think that will work (it didnt) -->
-    <style>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        background-image: url(https://c4.wallpaperflare.com/wallpaper/761/377/208/aperture-laboratories-fictional-logo-wallpaper-preview.jpg);
+            background-position: center center;
+       		display: grid;
+        	justify-content: center;
+        	margin: 100px;
+        	color: white;
+        	font-family: "Helvetica", sans-serif;
+    }
 
-      body {
-        font-family: "Helvetica", sans-serif;
+    .ApertureScienceGIF {
+                width: 200px;
+                border-radius: 6000px;
+        		opacity: 0.5;
+        }
+    
+    .GBox {
+        width: 500px;
+        height: 500px;
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+        border: solid 3px;
+        border-color: rgba(55, 55, 55 0.9);
         display: grid;
-        place-items: center;
-        background-color: gray;
-      }
-
-      .loginID {
-        /* time to style this stuff
-        later */
-      }
-      
-    </style>
-    </head>
-    <body>
-
-<form class="loginID">
+        justify-content: center;
+        text-align: center;
+        padding: 13px;
+    }
+    
+    .apseid {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: solid 2px;
+        border-color: white;
+    }
+    
+        .apseic {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: solid 2px;
+        border-color: white;
+    }
+</style>
+</head>
+<body>
+<div class="GBox">
+    <img src="https://images.steamusercontent.com/ugc/847096466141903198/D305E93C5F9110EAAF28330933A783E7090009AD/?imw=1024&imh=640&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" class="ApertureScienceGIF">
+    <h1>Login To Aperture Science</h1>
+    <form class="loginID">
   <label for="username">Aperture Science Electronic Identification Code</label>
-  <input type="text" id="APSEIC" name="ApertureScienceElectronicIdentificationCode" placeholder="Enter your Aperture Science Electronic Identification Code">
+  <input type="text" class="apseic" name="ApertureScienceElectronicIdentificationCode" placeholder="Enter your Aperture Science Electronic Identification Code">
   <input type="submit" value="Submit">
 </form>
 
 <form action="https://wayzzvr.github.io/home.html" method="post" class="loginCode">
   <label for="password">Aperture Science Electronic Secure Confirmation Lock Code</label>
-  <input type="text" id="APSESCLC" name="ApertureScienceElectronicIdentificationCode" placeholder="Enter your Aperture Science Electronic Secure Confirmation Lock Code">
+  <input type="text" class="apseid" name="ApertureScienceElectronicIdentificationCode" placeholder="Enter your Aperture Science Electronic Secure Confirmation Lock Code">
   <input type="submit" value="Submit">
 </form>
 
-    <p>Once you enter in your Aperture Science Electronic Secure Confirmation Lock Code you need to click the url (https://wayzzvr.github.io/home.html) and then enter again. I donno how to fix it.</p>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Aperture_Laboratories_Logo.svg/640px-Aperture_Laboratories_Logo.svg.png" alt="apertureeeeeee">
-      
-    </body>
+  
+</div>
+</body>
+</html>
