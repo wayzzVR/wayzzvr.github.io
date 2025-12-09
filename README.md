@@ -1,1 +1,3 @@
-OH I FOUND OUT WHERE IT IS THE FAVICON DOESNT WORK THATS GRAT
+12/9: Completely redid whats done of the website.
+
+12/
