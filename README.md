@@ -1,3 +1,4 @@
-12/9: Completely redid whats done of the website.
+12/9: Redid Pages Index / Login.html
+      Expects to redo Home.html
 
 12/5: Website start
