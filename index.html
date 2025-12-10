@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+    body {
+		background-image:url(https://upload.wikimedia.org/wikipedia/commons/b/bf/Portal_Stories_Mel_Overgrown_3.png);
+        background-size: cover;
+        color: white;
+        font: "Monospace", sans-serif;
+    }
+    
+    .mmenubox {
+        animation: round-corner-down 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        width: 350px;
+        height: 450px;
+        position: absolute;
+        top: 50px;
+        border: solid black 5px;
+        cursor: pointer;
+       	text-align: center;
+    }
+    
+    .mmenubox:hover {
+        animation: round-corner-up 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    
+    @keyframes round-corner-up {
+        0% {
+            border-radius: 30px;
+            backdrop-filter: blur(30px);
+            background-color: rgba(0, 0, 0, 0)
+        }
+        
+        100% {
+            border-radius: 0px;
+            backdrop-filter: blur(5px);
+            background-color: rgba(0, 0, 0, 0.3)
+        }
+    }
+    
+    @keyframes round-corner-down {
+        100% {
+            border-radius: 30px;
+            backdrop-filter: blur(30px);
+            background-color: rgba(0, 0, 0, 0)
+        }
+        
+        0% {
+            border-radius: 0px;
+            backdrop-filter: blur(5px);
+            background-color: rgba(0, 0, 0, 0.3)
+        }
+    }
+    
+    @keyframes color-swap {
+        0% {
+            background-color: white;
+            color: black;
+        }
+        
+        100% {
+            background-color: rgba(15, 15, 15, 0.6);
+            color: white;
+            width: 347px;
+            height: 47px;
+        }
+    }
+    
+    .o1 {
+        width: 350px;
+        height: 50px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        color: black;
+    }
+    
+    .o1:hover {
+       animation: color-swap 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    
+     .o2 {
+        width: 350px;
+        height: 50px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        color: black;
+    }
+    
+    .o2:hover {
+       animation: color-swap 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    
+    .o3 {
+        width: 350px;
+        height: 50px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        color: black;
+    }
+    
+    .o3:hover {
+       animation: color-swap 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    
+    .o4 {
+        width: 350px;
+        height: 50px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        color: black;
+    }
+    
+    .o4:hover {
+       animation: color-swap 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    
+    .secret {
+        background-color: black;
+    }
+    
+    .secret:active {
+        background-color: white;
+    }
+    
+    .black {
+        color: black;
+    }
+    
+    a {
+        color: black;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="mmenubox">
+    
+    <h1>
+        APERTURE
+    </h1>
+    
+    <div class="o1">
+        <p>
+            <a href="wayzzvr.github.io/login.html">Load GLaDOS</a>
+        </p>
+    </div>
+    <div class="o2">
+        <p>
+            <a href="wayzzvr.github.io/terminal.html">Terminal</a>
+        </p>
+    </div>
+    <div class="o3">
+        <p>
+            <a href="wayzzvr.github.io/login.html">Login</a>
+        </p>
+    </div>
+    <div class="o4">
+        <p>
+            <a href="wayzzvr.github.io/links.html">WayzzVR'z Links</a>
+        </p>
+    </div>
+    
+    <div class="secret">
+        <p>User: WayzzVR <span class="black">secret :]</span></p>
+    </div>
+</div>
+<p>Live Footage from Cam 03 Aperture Science 15:55 PM 12/3/25</p>
+
+</body>
+</html>
+
