@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    
+
+function checkInput() {
+    const userInput = document.getElementById('userInput').value.toLowerCase();
+    const hiddenContent = document.getElementById('hiddenContent');
+
+    if (userInput === 'wayzz isnt here') { 
+        hiddenContent.classList.remove('hidden');
+    } else {
+        hiddenContent.classList.add('hidden');
+        alert('Incorrect input. Please try again!');
+    }
+}
+</script>
+<style>
+
+.hidden {
+    display: none;
+}
+
+#hiddenContent {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+</style>
+</head>
+<body>
+    <form id="dynamicForm">
+        <label for="userInput">Enter a specific word:</label>
+        <input type="text" id="userInput" name="userInput">
+        <button type="button" onclick="checkInput()">Submit</button>
+    </form>
+
+    <div id="hiddenContent" class="hidden">
+        <h2>why</h2>
+        <p>why did you do it</p>
+    </div>
+
+</body>
+</html>
