@@ -5,6 +5,46 @@
             <style>
             
              body {
+        	background-image: url(https://i.redd.it/01s4ocfgf5251.jpg);
+            height: 100vh;
+            background-position: center center;
+            margin: 0px;
+        	color: white;
+        	font-family: "Helvetica", sans-serif;
+                }
+                
+                .loading {
+	animation: disappear 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                  	border-radius: 10px;
+				}
+                
+                @keyframes disappear {
+                	
+                0% {
+                  	opacity: 1;
+                }
+                
+                99% {
+                    opacity: 1;
+                }
+                
+                100% {
+                    opacity: 0;
+                }
+             }
+                
+                .bgload {
+                    height: 100vh;
+                    background-color: black;
+                    z-index: -1;
+                    animation: disappear 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                    display: grid;
+                    justify-content: center;
+                    text-align: center;
+                    animation: disappear 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                }
+                
+                 body {
         			background-image: url(https://i.redd.it/01s4ocfgf5251.jpg);
             		height: 100vh;
             		background-position: center center;
@@ -23,6 +63,7 @@
                     position: absolute;
                     left: 212px;
                     top: 10px;
+                    z-index: -2;
                 }
                 
                 .glados-side {
@@ -33,11 +74,28 @@
                     top: 0px;
                     margin: 0px;
                     position: absolute;
+                    z-index: -1;
                 }
                 
                 
             </style>
         </head>
+                
+            </style>
+        </head>
+        <body>
+            
+            <div class="bgload">
+                
+                 <img src="https://media.tenor.com/SfgqQDdp42oAAAAM/aperture-aperture-sience.gif" class="loading">
+                
+            <h1 class="loading">
+                Loading GLadOS...
+            </h1>
+                
+            </div>
+            
+          
         <body>
             
            	
@@ -100,7 +158,6 @@
                     > Shutdown <br>
                 </p>
             </div>
-                
             
         </body>
 	</html>
