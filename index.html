@@ -135,10 +135,27 @@
         color: black;
     }
 
+	.fade {
+		height: 100vh;
+		width: 100vh;
+		background-color: black;
+		animation: fade 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	}
+
+	@keyframes fade {
+		0% {
+			background-color: black;
+			opacity: 1;
+		}
+
+		100% {
+			opacity: 0;
+		}
+
 </style>
 </head>
 <body>
-
+<div class="fade"> </div>
 <div class="mmenubox">
     
     <h1>
