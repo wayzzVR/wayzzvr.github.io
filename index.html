@@ -10,6 +10,7 @@
         font: "Monospace", sans-serif;
     }
     
+    
     .mmenubox {
         animation: round-corner-down 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         width: 350px;
@@ -19,6 +20,7 @@
         border: solid black 5px;
         cursor: pointer;
        	text-align: center;
+        z-index -6;
     }
     
     .mmenubox:hover {
@@ -70,10 +72,14 @@
     .o1 {
         width: 350px;
         height: 50px;
+        top: 120px;
+        position: absolute;
         background-color: white;
         border-radius: 10px;
         text-align: center;
         color: black;
+        z-index -1;
+        
     }
     
     .o1:hover {
@@ -83,10 +89,13 @@
      .o2 {
         width: 350px;
         height: 50px;
+        top: 180px;
+        position: absolute;
         background-color: white;
         border-radius: 10px;
         text-align: center;
         color: black;
+        z-index -2;
     }
     
     .o2:hover {
@@ -96,10 +105,13 @@
     .o3 {
         width: 350px;
         height: 50px;
+        top: 240px;
+        position: absolute;
         background-color: white;
         border-radius: 10px;
         text-align: center;
         color: black;
+        z-index -3;
     }
     
     .o3:hover {
@@ -109,10 +121,13 @@
     .o4 {
         width: 350px;
         height: 50px;
+        position: absolute;
         background-color: white;
+        top: 300px;
         border-radius: 10px;
         text-align: center;
         color: black;
+        z-index -4;
     }
     
     .o4:hover {
@@ -121,6 +136,11 @@
     
     .secret {
         background-color: black;
+        z-index -5;
+        top: 390px;
+        position: absolute;
+        width: 350px;
+        height: 35px;
     }
     
     .secret:active {
@@ -135,22 +155,6 @@
         color: black;
     }
 
-	.fade {
-		height: 100vh;
-		width: 100vh;
-		background-color: black;
-		animation: fade 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	}
-
-	@keyframes fade {
-		0% {
-			background-color: black;
-			opacity: 1;
-		}
-
-		100% {
-			opacity: 0;
-		}
 
 </style>
 </head>
@@ -191,4 +195,3 @@
 
 </body>
 </html>
-
