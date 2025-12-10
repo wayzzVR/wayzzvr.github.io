@@ -1,177 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Aperture Science</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 <style>
-
     body {
-		background-image:url(https://upload.wikimedia.org/wikipedia/commons/b/bf/Portal_Stories_Mel_Overgrown_3.png);
-        background-size: cover;
-        color: white;
-        font: "Monospace", sans-serif;
-    }
-    
-    .mmenubox {
-        animation: round-corner-down 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        width: 350px;
-        height: 450px;
-        position: absolute;
-        top: 50px;
-        border: solid black 5px;
-        cursor: pointer;
-       	text-align: center;
-    }
-    
-    .mmenubox:hover {
-        animation: round-corner-up 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    }
-    
-    @keyframes round-corner-up {
-        0% {
-            border-radius: 30px;
-            backdrop-filter: blur(30px);
-            background-color: rgba(0, 0, 0, 0)
-        }
-        
-        100% {
-            border-radius: 0px;
-            backdrop-filter: blur(5px);
-            background-color: rgba(0, 0, 0, 0.3)
-        }
-    }
-    
-    @keyframes round-corner-down {
-        100% {
-            border-radius: 30px;
-            backdrop-filter: blur(30px);
-            background-color: rgba(0, 0, 0, 0)
-        }
-        
-        0% {
-            border-radius: 0px;
-            backdrop-filter: blur(5px);
-            background-color: rgba(0, 0, 0, 0.3)
-        }
-    }
-    
-    @keyframes color-swap {
-        0% {
-            background-color: white;
-            color: black;
-        }
-        
-        100% {
-            background-color: rgba(15, 15, 15, 0.6);
-            color: white;
-            width: 347px;
-            height: 47px;
-        }
-    }
-    
-    .o1 {
-        width: 350px;
-        height: 50px;
-        background-color: white;
-        border-radius: 10px;
-        text-align: center;
-        color: black;
-    }
-    
-    .o1:hover {
-       animation: color-swap 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    }
-    
-     .o2 {
-        width: 350px;
-        height: 50px;
-        background-color: white;
-        border-radius: 10px;
-        text-align: center;
-        color: black;
-    }
-    
-    .o2:hover {
-       animation: color-swap 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    }
-    
-    .o3 {
-        width: 350px;
-        height: 50px;
-        background-color: white;
-        border-radius: 10px;
-        text-align: center;
-        color: black;
-    }
-    
-    .o3:hover {
-       animation: color-swap 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    }
-    
-    .o4 {
-        width: 350px;
-        height: 50px;
-        background-color: white;
-        border-radius: 10px;
-        text-align: center;
-        color: black;
-    }
-    
-    .o4:hover {
-       animation: color-swap 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    }
-    
-    .secret {
-        background-color: black;
-    }
-    
-    .secret:active {
-        background-color: white;
-    }
-    
-    .black {
-        color: black;
-    }
-    
-    a {
-        color: black;
+        background-image: url(https://c4.wallpaperflare.com/wallpaper/761/377/208/aperture-laboratories-fictional-logo-wallpaper-preview.jpg);
+            background-position: center center;
+       		display: grid;
+        	justify-content: center;
+        	margin: 100px;
+        	color: white;
+        	font-family: "Helvetica", sans-serif;
     }
 
+    .ApertureScienceGIF {
+                width: 200px;
+                border-radius: 6000px;
+        		opacity: 0.5;
+        }
+    
+    .GBox {
+        width: 500px;
+        height: 500px;
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+        border: solid 3px;
+        border-color: rgba(55, 55, 55 0.9);
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        padding: 13px;
+    }
+    
+    .apseid {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: solid 2px;
+        border-color: white;
+    }
+    
+        .apseic {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: solid 2px;
+        border-color: white;
+    }
 </style>
 </head>
 <body>
+<div class="GBox">
+    <img src="https://images.steamusercontent.com/ugc/847096466141903198/D305E93C5F9110EAAF28330933A783E7090009AD/?imw=1024&imh=640&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" class="ApertureScienceGIF">
+    <h1>Login To Aperture Science</h1>
+    <form class="loginID">
+  <label for="username">Aperture Science Electronic Identification Code</label>
+  <input type="text" class="apseic" name="ApertureScienceElectronicIdentificationCode" placeholder="Enter your Aperture Science Electronic Identification Code">
+  <input type="submit" value="Submit">
+</form>
 
-<div class="mmenubox">
-    
-    <h1>
-        APERTURE
-    </h1>
-    
-    <div class="o1">
-        <p>
-            <a href="wayzzvr.github.io/login.html">Load GLaDOS</a>
-        </p>
-    </div>
-    <div class="o2">
-        <p>
-            <a href="wayzzvr.github.io/terminal.html">Terminal</a>
-        </p>
-    </div>
-    <div class="o3">
-        <p>
-            <a href="wayzzvr.github.io/login.html">Login</a>
-        </p>
-    </div>
-    <div class="o4">
-        <p>
-            <a href="wayzzvr.github.io/links.html">WayzzVR'z Links</a>
-        </p>
-    </div>
-    
-    <div class="secret">
-        <p>User: WayzzVR <span class="black">secret :]</span></p>
-    </div>
+<form action="https://wayzzvr.github.io/home.html" method="post" class="loginCode">
+  <label for="password">Aperture Science Electronic Secure Confirmation Lock Code</label>
+  <input type="text" class="apseid" name="ApertureScienceElectronicIdentificationCode" placeholder="Enter your Aperture Science Electronic Secure Confirmation Lock Code">
+  <input type="submit" value="Submit">
+</form>
+
+  
 </div>
-<p>Live Footage from Cam 03 Aperture Science 15:55 PM 12/3/25</p>
-
 </body>
 </html>
+
 
