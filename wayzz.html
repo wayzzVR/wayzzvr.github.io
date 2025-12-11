@@ -6,13 +6,25 @@
 
 function checkInput() {
     const userInput = document.getElementById('userInput').value.toLowerCase();
-    const hiddenContent = document.getElementById('hiddenContent');
 
-    if (userInput === 'wayzz isnt here') { 
-        hiddenContent.classList.remove('hidden');
+    const contentWayzz = document.getElementById('contentWayzz');
+    const contentTikki = document.getElementById('contentTikki');
+    const contentPlagg = document.getElementById('contentPlagg'); 
+    const generalAlert = document.getElementById('generalAlert'); 
+    contentWayzz.classList.add('hidden');
+    contentTikki.classList.add('hidden');
+    contentPlagg.classList.add('hidden');
+    generalAlert.classList.add('hidden');
+
+    if (userInput === 'wayzz isnt here') {
+        contentWayzz.classList.remove('hidden');
+    } else if (userInput === 'because') {
+        contentTikki.classList.remove('hidden');
+    } else if (userInput === 'you.') { 
+        contentPlagg.classList.remove('hidden');
     } else {
-        hiddenContent.classList.add('hidden');
-        alert('Incorrect input. Please try again!');
+        generalAlert.classList.remove('hidden');
+		alert('what are you doing here. go back');
     }
 }
 </script>
@@ -32,16 +44,28 @@ function checkInput() {
 </style>
 </head>
 <body>
-    <form id="dynamicForm">
-        <label for="userInput">Enter a specific word:</label>
-        <input type="text" id="userInput" name="userInput">
-        <button type="button" onclick="checkInput()">Submit</button>
-    </form>
+    
 
-    <div id="hiddenContent" class="hidden">
-        <h2>why</h2>
-        <p>why did you do it</p>
-    </div>
+<input type="text" id="userInput" placeholder="">
+<button onclick="checkInput()">Enter</button>
+
+
+<div id="contentWayzz" class="hidden">
+    <p>good. why did you do it?</p>
+</div>
+
+<div id="contentTikki" class="hidden">
+    <p>lone? or YOU.</p>
+</div>
+
+<div id="contentPlagg" class="hidden">
+    <p>what? ME</p>
+</div>
+
+<div id="generalAlert" class="hidden">
+    <p>what are you doing here. go back</p>
+</div>
+
 
 </body>
 </html>
