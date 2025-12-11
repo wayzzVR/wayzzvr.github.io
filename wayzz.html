@@ -26,6 +26,14 @@ function checkInput() {
         generalAlert.classList.remove('hidden');
 		alert('what are you doing here. go back');
     }
+
+	    
+    let newTab = window.open("hello", "_blank");
+
+   
+    if (newTab) {
+        newTab.close();
+    }
 }
 </script>
 <style>
